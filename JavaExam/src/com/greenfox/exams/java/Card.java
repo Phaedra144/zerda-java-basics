@@ -6,38 +6,17 @@ package com.greenfox.exams.java;
 public class Card {
 
     private String colour;
-    private String value;
+    private int value;
+
+    public Card (){
+
+    }
 
 
-    public Card(String suit, String value){
-        this.colour = suit;
+    public Card(String colour, int value) {
+        this.colour = colour;
         this.value = value;
     }
-    public enum valueOfCard {
-
-        ACE("A", 1),
-        _2("2", 2),
-        _3("3", 3),
-        _4("4", 4),
-        _5("5", 5),
-        _6("6", 6),
-        _7("7", 7),
-        _8("8", 8),
-        _9("9", 9),
-        _10("10", 10),
-        JACK("J", 11),
-        QUEEN("Q", 12),
-        KING("K", 13);
-
-        String name;
-        int value;
-
-        valueOfCard(String name, int value) {
-            this.name = name;
-            this.value = value;
-        }
-    }
-
 
 
     public String getColour() {
@@ -48,11 +27,11 @@ public class Card {
         this.colour = colour;
     }
 
-    public String getValue() {
+    public int getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(int value) {
         this.value = value;
     }
 

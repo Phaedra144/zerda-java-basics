@@ -65,11 +65,34 @@ public class BlackJack extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == newGame) {
+            housePlayed.setText("");
+            userPlayed.setText("");
+            house.playedCards.clear();
+            user.playedCards.clear();
+
 
 
         } else if (e.getSource() == drawACard) {
-            housePlayed.setText(house.drawCard().toString());
-            userPlayed.setText(user.drawCard().toString());
+
+            if (house.sumCards() < 17){
+                housePlayed.setText("House played: " + house.drawAndAddCard());
+            }
+            else if (house.sumCards() < 21 && house.sumCards()>= 17){
+                housePlayed.setText("House stopped");
+            }
+            else{
+                housePlayed.setText("The house LOST");
+
+            }
+
+            userPlayed.setText("User played: " + user.drawAndAddCard());
+            if (user.sumCards() < 21 && user.sumCards() >= 17){
+                userPlayed.setText("You are between 17 and 21, I recommend you to stop");
+            }
+            else if (user.sumCards() > 21){
+                userPlayed.setText("You LOST");
+            }
+
         }
     }
 }
