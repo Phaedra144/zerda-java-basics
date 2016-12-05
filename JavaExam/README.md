@@ -93,19 +93,22 @@ class Apple {
 }
 
 class TestApple {
+    
+  Apple myObject = new Apple();
+  
   public void testAdd() {
-    assertEquals(5, Apple.add(2, 3));
+    assertEquals(5, myObject.add(2, 3));
   }
 
   public void testMax() {
-    assertEquals(5, Apple.max_of_three(3, 4, 5));
+    assertEquals(5, myObject.max_of_three(3, 4, 5));
   }
 }
 ```
 
 Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
-#### Explain what you did, and answer the questions here:
+#### Explain what you did, and answer the questions here: No, because the test has to be run on an instance of the class, not on the class. So as I fixed it.
 
 
 ## 4. Question time! (~20 mins) [6p]
