@@ -111,10 +111,13 @@ Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 ## 4. Question time! (~20 mins) [6p]
 
 ### Where the abstract class is useful? [2p]
-#### Your answer:
+#### Your answer: The abstract class is useful when we have some common methods and properties that children classes have to inherit, but implements the method and properties differently.
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
-#### Your answer:
+#### Your answer: A method is a group of statements which perform an operation. It can alter an element of the program or create something new. The parts are: modifier, return type, name of method, parameter list, body of method.
+ For using a method it should be called.
 
 ### What is the constructor? When it is used? [2p]
-#### Your answer:
+#### Your answer: A constructor is has to be created if we want to create an object. Sot it is a special type of method that is used to initialize the object.
+Everything that is in the constructor will be executed when we create an object. It constructs the values i.e. provides data for the object that is why it is known as constructor.
+

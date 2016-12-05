@@ -6,10 +6,10 @@ import java.util.Collections;
 /**
  * Created by ${SzilviaB} on 2016. 12. 05..
  */
-public class Deck extends ArrayList<Card> {
+public class Deck{
 
     ArrayList<Card> cards;
-    ArrayList<Card> used;
+    ArrayList<Card> used = new ArrayList<Card>();
 
     String[] value = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
     String[] colour = {"pikk", "treff", "káró", "kör"};
@@ -28,8 +28,18 @@ public class Deck extends ArrayList<Card> {
 
     }
 
-    public ArrayList<Card> getDeck(){
-        return cards;
+
+
+    public void putUsedCard(){
+
+
+    }
+
+
+
+    public Card getCard(int i){
+        Card x = cards.get(i);
+        return x;
     }
 
 
