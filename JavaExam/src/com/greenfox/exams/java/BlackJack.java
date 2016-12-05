@@ -19,8 +19,8 @@ public class BlackJack extends JPanel {
         createJFrame();
         frame1.add(this);
 
-        userPlayed = new JLabel("User played");
-        housePlayed = new JLabel("House played");
+        userPlayed = new JLabel("User played:");
+        housePlayed = new JLabel("House played:");
         newGame = new JButton("New Game");
         drawACard = new JButton("Draw a drawCard");
 
